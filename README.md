@@ -53,25 +53,6 @@ sudo systemctl restart httpd
 ```
 sudo yum install -y mariadb
 ```
-## Step 3: Configure the LAMP Environment
-
-- Install Apache
-```bash
-sudo yum update -y
-sudo yum install -y httpd
-sudo systemctl start httpd
-sudo systemctl enable httpd
-```
-- Install PHP
-```
-sudo amazon-linux-extras enable php8.0
-sudo yum install -y php php-mysqlnd
-sudo systemctl restart httpd
-```
-- Install MySQL Client
-```
-sudo yum install -y mariadb
-```
 ## Step 4: Deploy Sample PHP Code
 
 - Navigate to the web root directory:
